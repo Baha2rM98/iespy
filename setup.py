@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="sapy-Baha2rM98",
+    name="iespy-Baha2rM98",
     version="1.0.0",
     author="Bahador Mirzazadeh",
     author_email="bahador.mirzazadeh30@gmail.com",
