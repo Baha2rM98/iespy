@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="iespy-Baha2rM98",
+    name="iespy",
     version="1.0.0",
     author="Bahador Mirzazadeh",
     author_email="bahador.mirzazadeh30@gmail.com",
     description="A python package for solving 'Interval Estimation' problems",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Baha2rM98/sapy",
+    url="https://github.com/Baha2rM98/iespy",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
