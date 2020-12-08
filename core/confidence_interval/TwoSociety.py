@@ -1,8 +1,8 @@
 import math
-from core.IntervalEstimation import IntervalEstimation
+from core.confidence_interval.ConfidenceInterval import ConfidenceInterval
 
 
-class TwoSocietyIE(IntervalEstimation):
+class TwoSociety(ConfidenceInterval):
     def interval_estimation_for_ratio(self, x1, n1, x2, n2, alpha):
         alpha = alpha / 2
         p1_hat = x1 / n1

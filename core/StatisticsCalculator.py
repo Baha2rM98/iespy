@@ -1,19 +1,21 @@
 import math
+import numpy as np
 
 
 class StatisticsCalculator:
     @staticmethod
     def mean(data):
-        return sum(data) / data.__len__()
+        return np.mean(np.array(data))
 
     @staticmethod
     def variance(data):
-        m = StatisticsCalculator.mean(data)
+        op_data = np.sqrt(data)
+        mean = StatisticsCalculator.mean(op_data)
         s = 0
-        for i in data:
-            s += math.pow((i - m), 2)
+        for i in op_data:
+            s += math.pow((i - mean), 2)
         return s / float(data.__len__() - 1)
 
     @staticmethod
     def standard_deviation(data):
-        return math.sqrt(StatisticsCalculator.variance(data))
+        return math.sqrt(StatisticsCalculator.variance(np.array(data)))

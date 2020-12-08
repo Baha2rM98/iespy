@@ -1,4 +1,4 @@
-class IntervalEstimation:
+class ConfidenceInterval:
     """
     Normal distribution standard table
     """
