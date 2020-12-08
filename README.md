@@ -1,1 +1,1 @@
-# statpy
+# Statistical Package For Sciences
