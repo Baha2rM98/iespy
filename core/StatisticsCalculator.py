@@ -9,7 +9,7 @@ class StatisticsCalculator:
 
     @staticmethod
     def variance(data):
-        op_data = np.sqrt(data)
+        op_data = np.array(data)
         mean = StatisticsCalculator.mean(op_data)
         s = 0
         for i in op_data:
