@@ -13,7 +13,7 @@ class StatisticsCalculator:
         mean = StatisticsCalculator.mean(op_data)
         s = 0
         for i in op_data:
-            s += math.pow((i - mean), 2)
+            s += (i - mean) ** 2
         return s / float(data.__len__() - 1)
 
     @staticmethod
